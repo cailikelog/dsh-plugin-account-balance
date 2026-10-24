@@ -46,6 +46,8 @@ pnpm add github:cailikelog/dsh-plugin-account-balance
 dsh
 ```
 
+这条 `pnpm add github:...` 在干净目录里实测过：装上 `0.1.0`，装进去的 `client.js` 与仓库里的字节完全一致。
+
 ### 索引是怎么生成的
 
 `docs/index.json` 由 DSH 仓库里的 market generator 读 `market-sources.txt` 生成，改完包名/描述/图标后重新生成即可：
