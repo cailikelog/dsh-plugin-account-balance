@@ -1,0 +1,47 @@
+{
+  "format": 1,
+  "title": "cailikelog plugins",
+  "description": "DeepSeek Harness plugins by cailikelog",
+  "plugins": [
+    {
+      "name": "dsh-plugin-account-balance",
+      "title": {
+        "en": "Account balance",
+        "zh": "账号余额"
+      },
+      "description": {
+        "en": "Show the remaining DeepSeek account balance in the composer dock, right after the cache-hit reading.",
+        "zh": "在输入框底部统计行显示账号剩余额度，位置紧挨「缓存命中」右侧。"
+      },
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IkFjY291bnQgYmFsYW5jZSI+CiAgPHJlY3QgeD0iMiIgeT0iMiIgd2lkdGg9IjYwIiBoZWlnaHQ9IjYwIiByeD0iMTQiIGZpbGw9IiM0RDlCRkYiLz4KICA8ZyBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj4KICAgIDxwYXRoIGQ9Ik0yMCAxNyBMMzIgMzEgTDQ0IDE3Ii8+CiAgICA8cGF0aCBkPSJNMzIgMzEgTDMyIDQ4Ii8+CiAgICA8cGF0aCBkPSJNMjEgMzUgSDQzIi8+CiAgICA8cGF0aCBkPSJNMjEgNDIgSDQzIi8+CiAgPC9nPgo8L3N2Zz4K",
+      "author": "cailikelog",
+      "homepage": "https://github.com/cailikelog/dsh-plugin-account-balance#readme",
+      "repository": {
+        "url": "https://github.com/cailikelog/dsh-plugin-account-balance"
+      },
+      "metadata": {
+        "keywords": [
+          "dsh-plugin",
+          "deepseek-harness",
+          "deepseek",
+          "account",
+          "balance",
+          "composer",
+          "额度",
+          "余额"
+        ]
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1792856667,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/cailikelog/dsh-plugin-account-balance",
+            "commit": "00f65dbe4499e8ff217986f4cbe07ef91346497a"
+          }
+        }
+      ]
+    }
+  ]
+}
