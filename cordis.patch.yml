@@ -1,0 +1,6 @@
+# Profile row inserted by this bundle. The id names this bundle's row; the name
+# resolves to package.json `main` for the host half and to `exports["./client"]`
+# for the browser half.
+- insert:
+    - id: dsh-plugin-account-balance:pill
+      name: dsh-plugin-account-balance

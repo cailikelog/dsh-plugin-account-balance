@@ -1,0 +1,46 @@
+{
+  "name": "dsh-plugin-account-balance",
+  "version": "0.1.0",
+  "description": "Show the remaining DeepSeek account balance beside the composer's cache-hit reading in DeepSeek Harness.",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-api-remotes",
+        "@deepseek-ai/dsh-api-remote-access",
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "deepseek",
+    "balance"
+  ],
+  "scripts": {
+    "test": "node test/smoke.cjs"
+  },
+  "devDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "license": "MIT"
+}
