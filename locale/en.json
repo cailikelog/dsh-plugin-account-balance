@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Account balance",
+    "description": "Show the remaining DeepSeek account balance in the composer dock, right after the cache-hit reading."
+  }
+}
