@@ -18,7 +18,19 @@ A DeepSeek Harness plugin that shows your remaining DeepSeek account balance in 
 
 插件是一个 DSH 插件包（`dsh.bundle.patch` + `dsh.client`），仓库里不带构建产物：`client.js` 是手写的模块装载包，`index.js` 只提供一个空的宿主半边。
 
-手工安装（路径明确，推荐）：
+### 从 Discover 安装
+
+本仓库同时发布了一份插件市场索引（`docs/index.json`，由 DSH 官方的 market generator 生成）。profile 启用了插件市场（`@deepseek-ai/dsh-experimental-plugin-market-bundle`）时，把下面这个地址加进 `设置 → 插件 → 发现` 的索引源，就能在应用内搜到并直接安装：
+
+```text
+https://cai-like.com/dsh-plugin-account-balance/index.json
+```
+
+也可以在对话里直接问 Agent：*"用 plugin_market 搜一下 account balance"* —— `plugin_market` 是 DSH 内置的工具，读取的就是 profile 里配置的这些索引源。
+
+> GitHub Pages 的 `cailikelog.github.io/...` 地址会 301 到上面的自定义域名，而市场抓取把重定向当作失败，所以索引源请用自定义域名这一条。
+
+### 手工安装
 
 ```bash
 # 1. 装进 profile 的 node_modules
@@ -34,7 +46,15 @@ pnpm add github:cailikelog/dsh-plugin-account-balance
 dsh
 ```
 
-也可以在 `设置 → 插件` 里安装本仓库，再启用；那条路会顺带把包写进 profile 的 `dsh.profile.bundles`。
+### 索引是怎么生成的
+
+`docs/index.json` 由 DSH 仓库里的 market generator 读 `market-sources.txt` 生成，改完包名/描述/图标后重新生成即可：
+
+```bash
+pnpm --filter @deepseek-ai/dsh-plugin-market-generator start \
+  --input market-sources.txt --output docs/index.json \
+  --title "cailikelog plugins" --description "DeepSeek Harness plugins by cailikelog"
+```
 
 ## 卸载
 

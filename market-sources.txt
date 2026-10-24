@@ -1,0 +1,7 @@
+# Sources listed in the published plugin-market index (docs/index.json).
+# One entry per line; blank lines and lines starting with # are ignored.
+# Regenerate with:
+#   pnpm --filter @deepseek-ai/dsh-plugin-market-generator start \
+#     --input market-sources.txt --output docs/index.json \
+#     --title "cailikelog plugins" --description "DeepSeek Harness plugins by cailikelog"
+https://github.com/cailikelog/dsh-plugin-account-balance

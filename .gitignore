@@ -1,3 +1,4 @@
 node_modules/
+.plugin-market-cache/
 *.log
 .DS_Store
